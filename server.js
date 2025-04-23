@@ -9,9 +9,8 @@ const { PORT } = require('./config/env');
 const app = express();
 
 app.use(cors({
-  origin: 'http://localhost:5173',
-          'https://edu-ai.pages.dev/',
-          credentials: true,
+  origin: ['http://localhost:5173', 'https://edu-ai.pages.dev'],
+  credentials: true
 }));
 app.use(express.json());
 
