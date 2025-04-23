@@ -10,7 +10,8 @@ const app = express();
 
 app.use(cors({
   origin: 'http://localhost:5173',
-  credentials: true,
+          'https://edu-ai.pages.dev/',
+          credentials: true,
 }));
 app.use(express.json());
 
