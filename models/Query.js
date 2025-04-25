@@ -4,8 +4,9 @@ const querySchema = new mongoose.Schema({
   user: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
   board: { type: String, required: true },
   query: { type: String, required: true },
-  response: { type: String, required: true },
+  response: { type: String }, // Removed required: true
   visual: { type: String },
+  video: { type: String },
   createdAt: { type: Date, default: Date.now },
 });
 
